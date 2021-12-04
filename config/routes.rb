@@ -4,5 +4,8 @@ Rails.application.routes.draw do
 
   get "/register", to: "users#new"
 
-  resources :users
+  resources :users do
+    resources :discover, :movies
+  end
+
 end
