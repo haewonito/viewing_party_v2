@@ -7,67 +7,81 @@
           null
         ]
       },
-      "/Users/haewonjeon/viewing_party_lite/app/poros/top_movie.rb": {
+      "/Users/haewonjeon/viewing_party_lite/app/controllers/users_controller.rb": {
         "lines": [
           1,
           1,
           null,
+          null,
           1,
+          2,
+          null,
+          null,
           1,
+          5,
+          null,
+          null,
           1,
-          1,
-          1,
+          5,
+          5,
+          5,
+          5,
+          null,
+          5,
+          null,
+          5,
+          3,
+          3,
+          3,
+          2,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null
         ]
       },
-      "/Users/haewonjeon/viewing_party_lite/app/facades/movie_facade.rb": {
+      "/Users/haewonjeon/viewing_party_lite/app/controllers/application_controller.rb": {
         "lines": [
           1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          null,
-          null,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           null
         ]
       },
-      "/Users/haewonjeon/viewing_party_lite/app/services/movie_service.rb": {
+      "/Users/haewonjeon/viewing_party_lite/app/models/user.rb": {
         "lines": [
           1,
           1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
           1,
           null,
           null,
           1,
+          null
+        ]
+      },
+      "/Users/haewonjeon/viewing_party_lite/app/models/application_record.rb": {
+        "lines": [
           1,
-          null,
+          1,
+          null
+        ]
+      },
+      "/Users/haewonjeon/viewing_party_lite/app/controllers/landing_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -82,17 +96,46 @@
         "branches": {
         }
       },
-      "/Users/haewonjeon/viewing_party_lite/app/models/application_record.rb": {
+      "/Users/haewonjeon/viewing_party_lite/app/facades/movie_facade.rb": {
         "lines": [
           0,
           0,
-          0
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null
         ],
         "branches": {
         }
       },
-      "/Users/haewonjeon/viewing_party_lite/app/models/user.rb": {
+      "/Users/haewonjeon/viewing_party_lite/app/poros/top_movie.rb": {
         "lines": [
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
           0,
           0,
           0
@@ -102,25 +145,6 @@
       },
       "/Users/haewonjeon/viewing_party_lite/app/jobs/application_job.rb": {
         "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/haewonjeon/viewing_party_lite/app/controllers/application_controller.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/haewonjeon/viewing_party_lite/app/controllers/landing_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
           0,
           0
         ],
@@ -156,10 +180,15 @@
         "branches": {
         }
       },
-      "/Users/haewonjeon/viewing_party_lite/app/controllers/users_controller.rb": {
+      "/Users/haewonjeon/viewing_party_lite/app/services/movie_service.rb": {
         "lines": [
           0,
           0,
+          null,
+          0,
+          0,
+          0,
+          0,
           0,
           null,
           0,
@@ -168,13 +197,6 @@
           null,
           0,
           0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
           0,
           0,
           0
@@ -203,6 +225,6 @@
         }
       }
     },
-    "timestamp": 1639592008
+    "timestamp": 1639605708
   }
 }
