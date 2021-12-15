@@ -2,10 +2,9 @@
 
 <%= button_to "Discover Page", user_discover_index_path, method: :get %>
 
-<% @movies.each do |movie| %>
+<% @top_movies.each do |movie| %>
   <%= link_to "#{movie.title}", user_movie_path(@user, movie.movie_id) %>
   Vote Average:
   <%= movie.vote_average %>
   <br>
 <% end %>
- 
