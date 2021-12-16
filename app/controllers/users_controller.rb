@@ -38,8 +38,12 @@ class UsersController < ApplicationController
       if user.authenticate(password)
         redirect_to "/users/#{user.id}"
       else
-        redirect_to register_path
+        flash[:alert] = "You have entered incorrect information."
+        redirect_to "/login"
       end
+    else
+      flash[:alert] = "You have entered incorrect information."
+      redirect_to "/login"
     end
   end
 end
