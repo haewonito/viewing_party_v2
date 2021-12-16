@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "MovieDB Service" do
   describe 'happy path' do
-    it 'can get popular movies', :vcr do
+    xit 'can get popular movies', :vcr do
       response = MovieService.top_movies_page1
 
       expect(response).to be_a(Hash)

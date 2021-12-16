@@ -30,7 +30,7 @@ RSpec.describe "landing page", type: :feature do
       fill_in 'Password', with: 'password1'
       click_button "Log In"
 
-      expect(current_path).to eq(user_path(@user.id))
+      expect(current_path).to eq(dashboard_path)
     end
 
     it "sad path1: when I fail to put in correct password, I get an error message" do

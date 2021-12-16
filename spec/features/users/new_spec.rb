@@ -16,7 +16,7 @@ RSpec.describe "register page", type: :feature do
 
       user = User.last
 
-      expect(current_path).to eq(user_path(user.id))
+      expect(current_path).to eq(dashboard_path)
   end
 
   it "sad path: I get an error message if I fail to fill in my name" do

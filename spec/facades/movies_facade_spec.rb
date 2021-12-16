@@ -1,7 +1,7 @@
 require 'rails_helper'
 ###As of writing this test, the facade is doing the work for both facade and service
 RSpec.describe 'Movie Facade' do
-  it '.top_movies', :vcr do
+  xit '.top_movies', :vcr do
     movies = MovieFacade.top_movies
 
     expect(movies).to be_a(Array)
