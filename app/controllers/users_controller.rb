@@ -25,18 +25,21 @@ class UsersController < ApplicationController
     elsif user.save
       redirect_to "/users/#{user.id}"
     end
+  end
 
+  def login_form
+  end
 
-    #
-    # if password != password_confirmation
-    #   flash[:alert] = "The passwords don't match. Try again."
-    #   redirect_to register_path
-    # elsif name = nil
-    #
-    #   redirect_to register_path
-    # else
-      # user = User.create(name: name, email: email, password: password, password_confirmation: password_confirmation)
-      # redirect_to "/users/#{user.id}"
-    # end
+  def login_user
+    email = params[:email]
+    password = params[:password]
+    if User.exists?(email: email)
+      user = User.where(email: email).first
+      if user.authenticate(password)
+        redirect_to "/users/#{user.id}"
+      else
+        redirect_to register_path
+      end
+    end
   end
 end

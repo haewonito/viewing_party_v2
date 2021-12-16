@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   root to: "landing#index"
 
   get "/register", to: "users#new"
+  get "/login", to: "users#login_form"
+  post "/login", to: "users#login_user"
 
   resources :users do
     resources :discover
