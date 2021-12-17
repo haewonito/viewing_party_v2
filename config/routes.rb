@@ -8,11 +8,10 @@ Rails.application.routes.draw do
 
   get "/dashboard", to: "users#show"
 
-  resources :users do
-    resources :discover
-  end
+  get "/users/discover", to: "discover#index"
 
-  resources :users do
-    resources :movies
-  end
+  get "/users/movies", to: "movies#index"
+  get "/users/movies/:movie_id", to: "movies#show"
+
+  resources :users
 end
