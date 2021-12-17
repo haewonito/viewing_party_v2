@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:id])
+    @user = User.find(session[:user_id])
   end
 
   def new
@@ -23,7 +23,9 @@ class UsersController < ApplicationController
       error_message = user.errors.full_messages.first
       flash[:error] = error_message
     elsif user.save
-      redirect_to "/users/#{user.id}"
+      session[:user_id] = user.id
+      redirect_to "/dashboard"
+
     end
   end
 
@@ -36,7 +38,8 @@ class UsersController < ApplicationController
     if User.exists?(email: email)
       user = User.where(email: email).first
       if user.authenticate(password)
-        redirect_to "/users/#{user.id}"
+        session[:user_id] = user.id
+        redirect_to "/dashboard"
       else
         flash[:alert] = "You have entered incorrect information."
         redirect_to "/login"

@@ -5,7 +5,6 @@ RSpec.describe "landing page", type: :feature do
     before(:each) do
       visit register_path
 
-      expect(current_path).to eq(register_path)
 
       fill_in 'Name', with: 'User 1'
       fill_in 'Email', with: 'user1@email.com'
@@ -30,7 +29,7 @@ RSpec.describe "landing page", type: :feature do
       fill_in 'Password', with: 'password1'
       click_button "Log In"
 
-      expect(current_path).to eq(user_path(@user.id))
+      expect(current_path).to eq("/dashboard")
     end
 
     it "sad path1: when I fail to put in correct password, I get an error message" do
